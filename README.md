@@ -1,1 +1,1 @@
-# Chasse-aux-pigraphes
+# Chasse-aux-épigraphes
