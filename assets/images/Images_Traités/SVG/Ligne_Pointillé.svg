@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 372.99 156.1">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-dasharray: 0 0 11.73 11.73;
+      }
+
+      .cls-1, .cls-2 {
+        fill: none;
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-3 {
+        opacity: .5;
+      }
+    </style>
+  </defs>
+  <g id="Logo">
+    <g id="Ligne_Pointillé" class="cls-3">
+      <g>
+        <path class="cls-2" d="m.3,67.81c1.6-1.21,3.2-2.42,4.79-3.61"/>
+        <path class="cls-1" d="m14.54,57.23C74.24,13.79,125.95-11.53,151.4,6.24c35.28,24.63-5.13,114.4,31.19,141.63,35.69,26.75,119.8-21.7,162.46-56.79,7.55-6.21,14-12.19,19.33-17.48"/>
+        <path class="cls-2" d="m368.5,69.42c1.48-1.54,2.86-2.99,4.12-4.36"/>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,132 @@
+@charset "UTF-8";
+
+/* Importe les fichiers CSS */
+@import url(base.css);
+@import url(normalize.css);
+@import url(utilitaires.css);
+@import url(typo.css);
+
+/* Importe les typographies manquantes */
+@import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;200;300;400&family=Indie+Flower&family=Roboto&display=swap'); /* Imbue */
+@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600&display=swap'); /* Smooch sans */
+
+
+
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+/* Visuel du background */
+body{
+    background-image: url(../images/Images_Pattern/old_map.png);
+}
+
+.containeur {
+    position: relative;
+    background-color: #333;
+    margin: 0 0.2em 5em 0.2em;
+    padding: 2em 0.5em;
+}
+
+.containeur2 {
+
+    background-image: url(../images/Images_Pattern/Papier_brunatre.png);
+    background-size:cover;
+    padding: 0 auto;
+}
+
+/* Header */
+.entete {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8em 2em;
+    background-image: url(../images/Images_Pattern/lined_paper.png);
+    background-repeat: round;
+    box-shadow: 0 4px 4px rgba(3,3,3,0.25);
+}
+.menuPrincipale {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items:flex-end;
+}
+.menuPrincipale__item {
+    padding-right: 1em;   
+}
+.menuPrincipale__lien {
+    font-size: 18px;
+    text-decoration:none;
+    color: #333;
+}
+.menuPrincipale__lien:active{
+    text-decoration: underline;
+}
+.menuPrincipale__lien:hover{
+    background-image: url(../images/Images_Traités/2x/survol_Acc.jpg);
+    background-position: center;
+    background-repeat: space;
+}
+.menuPrincipale__lien:focus {
+    border: 2px dashed #420D0D;
+}
+.epingle{
+    width: 45%;
+    height: 66px;
+    background: rgb(145,88,56);
+    background: linear-gradient(180deg, rgba(145,88,56,1) 0%, rgba(200,158,95,1) 24%, rgba(152,97,61,1) 46%);
+    border-radius: 3px;
+    border: 2px solid #915838;
+    position: absolute;
+    top: 0;
+    left: 26%;
+    padding: 0 auto;
+}
+@media(min-width:699px) {
+    .logo{
+        margin-right: auto;
+    }
+    .nav{
+        margin-left: auto;
+    }
+}
+@media(min-width: 999px) {
+    .entete{
+
+    }
+    .menuPrincipale__lien{
+        font-size: 24px;
+    }
+
+}
+/* CSS page Chasse */
+.sectionReglement {
+
+    margin: 2em 5em;
+    padding: 2em;
+    background-image: url(../images/Images_Pattern/vintage-wallpaper.webp); 
+    background-size:contain;
+    border-radius: 10px;
+    color: #FFF;
+
+}
+.sectionReglement h1,
+.menuPrincipale__lien {
+    font-family: 'Imbue', serif;
+    font-weight: 500;
+}
+.sectionReglement p,
+.sectionReglement li {
+    font-family: 'Smooch Sans', sans-serif;
+    font-size: 24px;
+    padding-bottom:  1.5em;
+}
+.sectionJeu {
+    margin: 2em 5em;
+    padding: 2em;
+    background-image: url(../images/Images_Traités/Chasse_Bg_skin.jpg); 
+    background-size:cover;
+    background-repeat: space;
+    border-radius: 10px;
+}
