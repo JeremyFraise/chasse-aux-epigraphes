@@ -1,0 +1,10 @@
+/*** Styles de base ***/
+body {
+    margin: 0;
+}
+
+/* Images fluides */
+img {
+    max-width: 100%;
+}
+
