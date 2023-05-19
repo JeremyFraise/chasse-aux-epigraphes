@@ -200,6 +200,7 @@ body{
             flex-direction: column;
             justify-content: center;
             box-shadow: -1px 4px 13px #333;
+            transition: ease-in-out 0.2s;
         }
         ul{
             list-style: none;
@@ -212,6 +213,28 @@ body{
             color:black;
             
         }
+        .conteneur_fiche_personnage:hover{
+            background-color: #dbc33d;
+            transition: ease-in-out 0.2s;
+        }
+      
         a:-webkit-any-link{
-            text-decoration: none;
+            text-decoration: none;  
+        }
+        .selection_filtre{
+          display:flex;
+          flex-direction: column;
+
+        }
+        @media(min-width:900px){
+            .selection_filtre{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+
+        }
+        }
+        
+        .selection_filtre li{
+            margin-right: 12px;
         }
