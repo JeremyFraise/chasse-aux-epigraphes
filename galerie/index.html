@@ -151,89 +151,103 @@
     <div>
     <h2>Filtrer par type d'indice</h2>
     <ul class="selection_filtre">
-        <li>Personnages</li>
-        <li>Objets</li>
-        <li>Lieux</li>
+        <li>
+            <button class="filtres__bouton" data-critere="personnage">Personnages</button>
+        </li>
+        <li>
+            <button class="filtres__bouton" data-critere="objet">Objets</button>
+        </li>
+        <li>
+            <button class="filtres__bouton" data-critere="lieu">Lieux</button>
+        </li>
     </ul>
     </div>
     <h2>Filtrer par secteur d'activités</h2>
     <div>
     <ul class="selection_filtre">
-        <li>Sports et spectacles</li>
-        <li>Sciences et lettres</li>
-        <li>Économie et politique</li>
-        <li>Arts visuels</li>
+        <li>
+           <button class="filtres__bouton" data-secteur="sports">Sports et spectacles</button>
+        </li>
+        <li>
+            <button class="filtres__bouton" data-secteur="sciences">Sciences et lettres</button>
+        </li>
+        <li>
+            <button class="filtres__bouton" data-secteur="economie">Économie et politique</button>
+        </li>
+        <li>
+            <button class="filtres__bouton" data-secteur="arts">Arts visuels</button>
+        </li>
     </ul>
     </div>
     <ul class="conteneur_galerie">
     
-    <li>
+    <li data-critere="personnage" data-secteur="arts">
         <a href="../fiche/arts-visuels.html?id=e0001&titre=EdmundAlleyn"><figure class="conteneur_fiche_personnage">
         <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
         <figcaption>Edmund Alleyn</figcaption>
     </figure></a>
     </li>
-    <li>
+    <li data-critere="objet" data-secteur="sciences">
         <a href="../fiche/arts-visuels.html?id=e0002&titre=Philippe-JosephAubert%20de%20Gaspé"><figure class="conteneur_fiche_personnage">
             <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
             <figcaption>Philippe-Joseph Aubert de Gaspé</figcaption>
         </figure></a>
         </li>
-        <li>
+        <li data-critere="objet" data-secteur="sports">
             <a href="../fiche/arts-visuels.html?id=e0004&titre=HenrietteBelley"><figure class="conteneur_fiche_personnage">
                 <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                 <figcaption>Henriette Belley</figcaption>
             </figure></a>
             </li>
-            <li>
+            <li data-critere="lieu" data-secteur="sciences">
                 <a href="../fiche/arts-visuels.html?id=e0005&titre=RobertBlatter"><figure class="conteneur_fiche_personnage">
                     <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                     <figcaption>Robert Blatter</figcaption>
                 </figure></a>
                 </li>
-                <li>
+                <li data-critere="objet" data-secteur="economie">
                     <a href="../fiche/arts-visuels.html?id=e0007&titre=JosephKnight%20Boswell"><figure class="conteneur_fiche_personnage">
                         <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                         <figcaption>Joseph Knight Boswell</figcaption>
                     </figure></a>
                     </li>
-                    <li>
+                    <li data-critere="personnage" data-secteur="economie">
                         <a href="../fiche/arts-visuels.html?id=e0008&titre=MartheCaillaud-Simard"><figure class="conteneur_fiche_personnage">
                             <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                             <figcaption>Marthe Caillaud-Simard</figcaption>
                         </figure></a>
                         </li>
-                        <li>
+                        <li data-critere="lieu" data-secteur="sports">
                             <a href="../fiche/arts-visuels.html?id=e0012&titre=JohnnyFarago"><figure class="conteneur_fiche_personnage">
                                 <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                                 <figcaption>Johnny Farago</figcaption>
                             </figure></a>
                             </li>
-                            <li>
+                            <li data-critere="personnage" data-secteur="sports">
                                 <a href="../fiche/arts-visuels.html?id=e0015&titre=CamilleHenry"><figure class="conteneur_fiche_personnage">
                                     <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                                     <figcaption>Camille Henry</figcaption>
                                 </figure></a>
                                 </li>
-                                <li>
+                                <li data-critere="lieu" data-secteur="arts">
                                     <a href="../fiche/arts-visuels.html?id=e0016&titre=LouisJobin"><figure class="conteneur_fiche_personnage">
                                         <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                                         <figcaption>Louis Jobin</figcaption>
                                     </figure></a>
                                     </li>
-                                    <li>
+                                    <li data-critere="personnage" data-secteur="sciences">
                                         <a href="../fiche/arts-visuels.html?id=e0019&titre=SigismundMohr"><figure class="conteneur_fiche_personnage">
                                             <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                                             <figcaption>Sigismund Mohr</figcaption>
                                         </figure></a>
                                         </li>
-                                        <li>
+                                        <li data-critere="objet" data-secteur="arts">
                                             <a href="../fiche/arts-visuels.html?id=e0021&titre=AlfredPellan"><figure class="conteneur_fiche_personnage">
                                                 <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                                                 <figcaption>Alfred Pellan</figcaption>
                                             </figure></a>
                                             </li>
-                                            <li>
+                                            <li data-critere="lieu" data-secteur="economie">
                                                 <a href="../fiche/arts-visuels.html?id=e0022&titre=MauricePollack"><figure class="conteneur_fiche_personnage">
                                                     <img src="https://via.placeholder.com/230x230/cccccc/9e0b0b" alt="">
                                                     <figcaption>Maurice Pollack</figcaption>
