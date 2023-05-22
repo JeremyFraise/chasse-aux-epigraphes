@@ -350,7 +350,7 @@ background-color: rgba(0,0,0,0);
         }
         .conteneur_fiche_personnage:hover{
             background-color: #dbc33d;
-            transition: ease-in-out 0.2s;
+           
         }
       
         a:-webkit-any-link{
@@ -359,7 +359,7 @@ background-color: rgba(0,0,0,0);
         .selection_filtre{
           display:flex;
           flex-direction: column;
-
+          
         }
         @media(min-width:900px){
             .selection_filtre{
@@ -372,6 +372,7 @@ background-color: rgba(0,0,0,0);
         
         .selection_filtre li{
             margin-right: 12px;
+            
         }
         /* Iteractivité filtres */
         .selection{
@@ -381,6 +382,16 @@ background-color: rgba(0,0,0,0);
         .selection figure{
             box-shadow: -1px 4px 13px #a96206;
         }
-        button{
+        .filtres__bouton{
             font-family: 'Imbue', serif;
+            background-color: #FFFFFF;
+            transition: ease-in-out 0.2s;
+            border-radius: 2px;
+            border-style:solid;
+            font-size: 1.6em;
         }
+        .filtres__bouton:hover{
+            background-color: #f4e986;
+            transition: ease-in-out 0.2s;
+        }
+        
