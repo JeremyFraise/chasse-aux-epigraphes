@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Énigma, chasse, épigraphes, données ouvertes, Chasse aux épigraphes, personnages historiques">
+        <meta name="descriptions" content="Chasse aux épigraphes est un jeu, une chasse aux trésors imaginée par Énigma, firme spécialisée en jeux sérieux. Les données proviennent des épigraphes historiques de la Ville de Québec.
+         Il est réalisé par Sarah Dufour, Annabelle Ouellet, Jeremy Fraser et Mathieu Therrien, étudiants et étudiantes en première année du programme Techniques d’intégration multimédia.">
+        <meta name="author" content="Énigma & le programme Techniques d’intégration multimédia du Cégep de Sainte-Foy">
+        <title> Concours - Chasse aux epigraphes </title>
+        <link rel="stylesheet" href="../assets/css/mandatD.css">
+    </head>
+
+    <body>
+        <header class="entete" role="banner">
+            <!--Logo-->
+            <figure class="logo">
+<!--Svg logo-->
+<figcaption class="altLogo screen-reader-only">Chasse aux épigraphes dans la ville de Québec</figcaption>
+            </figure>
+            <!--Nav-->
+            <nav class="nav">
+                <ul class="menuPrincipale">
+                    <li class="menuPrincipale__item">
+                        <a class="menuPrincipale__lien" href="../accueil/index.html">Accueil</a>
+                    </li>
+                    <li class="menuPrincipale__item">
+                        <a class="menuPrincipale__lien" href="index.html">Chasse aux épigraphe</a>
+                    </li>
+                    <li class="menuPrincipale__item">
+                        <a class="menuPrincipale__lien" href="../galerie/index.html">Galerie de personnage</a>
+                    </li>
+                    <li class="menuPrincipale__item">
+                        <a class="menuPrincipale__lien" href="../carte/index.html">Carte</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+         <h1 class="concours__h2"> Concours </h1>
+
+         <p class="concours__intro">
+            Courez la chance de gagner un forfait pour deux à l’Auberge des Illustres voisins incluant : Le souper à la carte. La nuitée à l’Auberge. Le petit-déjeuner à la carte. Pour participer, remplissez le formulaire d'inscription.
+         </p>
+
+        <form class="concours" action="">
+            <fieldset class="concours__inscription">
+                <legend class="concours__legend"> Inscriptions aux concours </legend>
+                
+                <label for="concours__nom" > Nom : </label>
+                <input type="text" id="concours__nom" name="concours__nom" required>
+
+                <label for="concours__prenom" > Prenom : </label>
+                <input type="text" id="concours__prenom" name="concours__prenom"required>
+
+                <label for="concours__adresse"> Adresse : </label>
+                <input type="text" id="concours__adresse" name="concours__adresse" required>
+
+                <label for="concours__ville" > Ville :</label>
+                <input type="text" id="concours__ville" name="concours__ville" required>
+
+                <select id="concours__province" name="concours__province" required>
+                    <option value="Alberta"> Alberta </option>
+                    <option value="Colombie-Britannique"> Colombie-Britannique</option>
+                    <option value="Île-du-Prince-Édouard"> Île-du-Prince-Édouard</option>
+                    <option value="Manitoba">Manitoba</option>
+                    <option value="Nouveau-Brunswick">Nouveau-Brunswick</option>
+                    <option value="Nouvelle-Écosse">Nouvelle-Écosse</option>
+                    <option value="Ontario">Ontario</option>
+                    <option value="Québec"> Québec </option>
+                    <option value="Saskatchewan">Saskatchewan</option>
+                    <option value="Terre-Neuve-et-Labrador"> Terre-Neuve-et-Labrador </option>
+                    <option value="Les Territoires du Nord-Ouest">Territoires du Nord-Ouest</option>
+                    <option value="Nunavut"> Nuvanut </option>
+                    <option value="Yukon"> Yukon </option>
+                </select>
+
+                <label for="concours__codePostal" > Code Postale : </label>
+                <input type="text" id="concours__codePostal" name="concours__codePostal"required>
+
+                <label for="concours__telephone" > Téléphone : </label>
+                <input type="text" id="concours__telephone" name="concours__telephone"required>
+
+                <label for="concours__courriel" > Adresse Courriel : </label>
+                <input type="email" id="concours__courriel" name="concours__courriel"required pattern="\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+">
+
+                <label for="concours__enigme" > Votre Chasse :</label>
+                <input type="textarea" id="concours__enigme" name="concours__enigme"required>
+
+                <label for="concours__concentement" > J'ai lu et accepté les règlements du concours</label>
+                <input type="checkbox" id="concours__concentement" name="concours__concentement"required>
+
+                <p class="soumettre"><button type="submit">M'inscrire au concours</button></p>
+
+            </fieldset>
+           <p class="concours__reglements">
+            Règlements du concours
+            Ouvert aux personnes de 18 ans et plus de nationalité canadienne.
+            Les participant.e.s sont admissibles du 5 avril au 10 juin 2023.
+            Une seule participation par personne et par jour. Le tirage aura lieu le 10 juin 2023.
+           </p>
+        </form>
+    </body>
+   <footer role="footer">
+ <ul class="menu">
+ <li class="menuSociaux__item">
+ <a class="menuSociaux__lien">
+ <img src="" alt="Facebook">
+ </a>
+ </li>
+ <li class="menuSociaux__item">
+ <a class="menuSociaux__lien">
+ <img src="" alt="Instagram">
+ </a>
+ </li>
+ <li class="menuSociaux__item">
+ <a class="menuSociaux__lien">
+ <img src="" alt="Twitter">
+ </a>
+ </li>
+ <li class="menuSociaux__item">
+ <a class="menuSociaux__lien">
+ <img src="" alt="Youtube">
+ </a>
+ </li>
+ </ul>
+ 
+ <ul class="menuFooter">
+ <li class="menuFooter__item">
+ <a class="menuFooter__lien" href="">Accueil</a>
+ </li>
+ <li class="menuFooter__item"> 
+ <a class="menuFooter__lien" href="">Chasse aux épigraphe</a>
+ </li>
+ <li class="menuFooter__item">
+ <a class="menuFooter__lien" href="">Galerie de personnage</a>
+ </li>
+ <li class="menuFooter__item">
+ <a class="menuFooter__lien" href="">Carte</a>
+ </li>
+ </ul>
+ 
+ <p>
+ Une autre création de Énigma, 250 boul. Charest ouest, Québec, Québec. 418-654-9823
+ Merci à l’équipe des données ouvertes de la Ville de Québec qui a rendu disponibles le jeu de données « Épigraphes historiques » sous licence CC BY. 
+ Ces données ont été adaptées pour mieux répondre aux besoins pédagogiques et servir de prétexte à la « Chasse aux épigraphes ».
+ </p>
+ 
+ <p>
+ Une réalisation de Sarah Dufour, Jeremy Fraser, Mathieu Thérien et Annabelle Dufour © Tous droits réservés 2023. Travail scolaire réalisé dans le cadre du programme Techniques d’intégration multimédia. 
+ Cégep de Sainte-Foy
+ </p>
+ </footer>
+</html>
