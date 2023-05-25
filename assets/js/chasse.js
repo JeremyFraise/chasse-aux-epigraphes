@@ -18,11 +18,13 @@ const objChasse = {
     initialiser: function() {
 
         // Affiche le nombre d'indice sur 3
-        if(localStorage.intCompteur != undefined) {
-            
+        if(localStorage.intCompteur == undefined) {
+            document.querySelector('.sectionJeu h2').innerHTML = "Tableau du jeu Chasse aux épigraphes";
+        }
+        else{
+            document.querySelector('.sectionJeu h2').innerHTML = "Chasse pigée : <span class='NbIndices'></span> indice sur 3"
         }
         
-
         if(localStorage.id_personnage == null) {
             document.getElementById("indicePersonnage").innerText = "";
             document.querySelector(".chasseDebutee").classList.add("cache");
@@ -55,20 +57,34 @@ const objChasse = {
             document.getElementById('lienConcours').classList.remove('cache');
         }
 
-        // Affiche le contenu
+        // Affiche le contenu selon la progression
         for(let intType = 0; intType < this.arrTypeChoix.length; intType++) {
-            if(JSON.parse(localStorage.getItem(this.arrTypeChoix[intType] + '_est_trouve')) == true) {
-                document.getElementById('libelle_' + this.arrTypeChoix[intType]).innerText = objJSONepigraphes[localStorage.getItem('id_' + this.arrTypeChoix[intType])].PRENOM + " " + objJSONepigraphes[localStorage.getItem('id_' + this.arrTypeChoix[intType])].NOM;
+            if(localStorage.id_personnage != undefined) {
+                if(JSON.parse(localStorage.getItem(this.arrTypeChoix[intType] + '_est_trouve')) == true) {
 
+                    document.getElementById('libelle_' + this.arrTypeChoix[intType]).innerText = objJSONepigraphes[localStorage.getItem('id_' + this.arrTypeChoix[intType])].PRENOM + " " + objJSONepigraphes[localStorage.getItem('id_' + this.arrTypeChoix[intType])].NOM;
+                    document.getElementById('image_' + this.arrTypeChoix[intType]).src = "../assets/image/imagesOptimisees/galerie/410/" + localStorage['id_' + this.arrTypeChoix[intType]] + ".jpg";
+                    document.getElementById('image_' + this.arrTypeChoix[intType]).alt = objJSONepigraphes[localStorage.getItem('id_' + this.arrTypeChoix[intType]) ];
+                    document.getElementById('image_' + this.arrTypeChoix[intType]).classList.remove('image_libelle--cache');
+
+                }
+                else{
+                    document.getElementById('libelle_' + this.arrTypeChoix[intType]).innerText = this.arrTypeChoix[intType];
+                    document.getElementById('image_' + this.arrTypeChoix[intType]).src = "../assets/image/imagesOptimisees/galerie/410/" + localStorage.getItem('id_' + this.arrTypeChoix[intType]) + ".jpg";
+                    document.getElementById('image_' + this.arrTypeChoix[intType]).alt = "Image de " + this.arrTypeChoix[intType] + " caché";
+                    document.getElementById('image_' + this.arrTypeChoix[intType]).classList.add('image_libelle--cache');
+                }
             }
             else{
-                document.getElementById('libelle_' + this.arrTypeChoix[intType]).innerText = this.arrTypeChoix[intType];
+                document.getElementById('image_' + this.arrTypeChoix[intType]).src = "../assets/image/memphis-mini-dark.webp";
             }
         }
 
     },
     // Méthodes
     demarrerChasse: function() {
+
+        document.querySelector(".retroaction").classList.add("cache");
         let refSegPersonnage = document.getElementById('indicePersonnage');
         let refSegObjet = document.getElementById('indiceObjet');
         let refSegLieu = document.getElementById('indiceLieu');
@@ -98,6 +114,8 @@ const objChasse = {
         // Désactive le bouton «Démarrer une chasse» qui sera réactiver après avoir appuyé sur le bouton «Voulez-vous pigez une nouvelle chasse?» -> À vos claviers
         document.getElementById("btnCommencee").disabled = true;
         document.getElementById("btnReintialiser").classList.remove("cache");
+
+        this.initialiser();
     },
 
     reintialiserBoutonDebuter: function() {
