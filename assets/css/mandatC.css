@@ -4,7 +4,7 @@
 @import url(base.css);
 @import url(normalize.css);
 @import url(utilitaires.css);
-@import url(assets/css/typo.css);
+@import url(typo.css);
 
 /* Importe les typographies manquantes */
 @import url('https://fonts.googleapis.com/css2?family=Imbue:wght@100;200;300;400&family=Indie+Flower&family=Roboto&display=swap'); /* Imbue */
@@ -66,7 +66,13 @@ body{
     transition: 0.5s;
 }
 .enteteQuandMenuOuvert{
-padding-bottom: 17em;
+    padding-bottom: 15em;
+}
+.enteteMobile__sansJS{
+    padding-bottom: 25em;
+}
+.enteteMobile__sansJS .logo{
+    display: none;
 }
 .logo{
     margin: 1.5em auto 0 0;
@@ -250,7 +256,7 @@ border-left: 5px solid rgba(101, 68, 180, 1);
 
 /* Styles pour le bouton et l'image */
 .btnMenu{
-width: 100px;
+width: 45px;
 margin: 0 1em 1em auto;
 background-color: rgba(0,0,0,0);
 } 
@@ -411,7 +417,7 @@ background-color: rgba(0,0,0,0);
 .btnJeu:disabled{
     background-image: url(../image/boutons/Bouton_Jouer__inactif.png);
 }
-@media(min-width:699px) {
+@media(min-width:599px) {
     .sectionReglement{
         margin: 2em 2em;
     }
@@ -447,6 +453,7 @@ background-color: rgba(0,0,0,0);
     margin-left: auto;
     max-width: 350px;
     z-index:100;
+    line-height: 1.2;
 }
 @media(min-width:599px){
     .footer{
@@ -621,12 +628,6 @@ background-color: rgba(0,0,0,0);
 .feuille2{
     width: 100%;
     height: 700px;
-}
-@media(min-width:999px){
-    .picture__feuille2{
-        justify-content: none;
-    }
-   
 }
 /* .feuille2{
    
