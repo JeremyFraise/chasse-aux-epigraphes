@@ -5,7 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Jeu de la chasse - Chasse aux épigraphes</title>
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
     <link rel="stylesheet" href="../assets/css/mandatC.css">
     <script defer src="../assets/js/epigraphes.js"></script>
     <script defer src="../assets/js/menu.js"></script>
@@ -17,8 +26,8 @@
 
         <div class="epingle"></div>
         
-        <article class="containeur2">
-            <header class="entete" role="banner">
+        <div class="containeur2">
+            <header class="entete .enteteMobile__sansJS" role="banner">
                 <!--Logo-->
                 <figure class="logo">
                     <svg width="340" height="144" viewBox="0 0 340 144" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -212,18 +221,16 @@
                     <button class="btnReintialiser cache" id="btnReintialiser">Réactivez le bouton pour piger une nouvelle chasse?</button>
                     <button class="btnJeu" id="btnCommencee">Pigez une chasse</button>
                     <a id="lienConcours" class="lien cache" href="../concours/index.html">Participer au concours</a>
-
-                    
                     
                 </section>
         
             </main>
             
-        </article>
+        </div>
     </div>
 
     <footer role="contentinfo" class="footer">
-        <img class="footer__img" src="../assets/image/Papier_Orangish@2x.png">
+        <img class="footer__img" src="../assets/image/Papier_Orangish@2x.png" alt>
         <div class="divFooter">
            
             <ul class="menu">
@@ -252,16 +259,16 @@
             </ul>
             <ul class="menuFooter">
                 <li class="menuFooter__item">
-                    <a class="menuFooter__lien" href="">Accueil</a>
+                    <a class="menuFooter__lien" href="../index.html">Accueil</a>
                 </li>
                 <li class="menuFooter__item"> 
-                    <a class="menuFooter__lien" href="">Chasse aux épigraphe</a>
+                    <a class="menuFooter__lien" href="chasse.html">Chasse aux épigraphe</a>
                 </li>
                 <li class="menuFooter__item">
-                    <a class="menuFooter__lien" href="">Galerie de personnage</a>
+                    <a class="menuFooter__lien" href="../galerie/galerie.html">Galerie de personnage</a>
                 </li>
                 <li class="menuFooter__item">
-                    <a class="menuFooter__lien" href="">Carte</a>
+                    <a class="menuFooter__lien" href="../carte/carte.html">Carte</a>
                 </li>
             </ul>
         </div>
